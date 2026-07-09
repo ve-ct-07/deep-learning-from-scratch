@@ -127,6 +127,10 @@ class CoupledLSTM:
             dh = dconcat[:dh.shape[0]]
             dc_next = dc * f
 
+        # Gradient clipping
+        for g in grads.values():
+            np.clip(g, -5, 5, out=g)
+
         return grads
 
     def update(self, optimizer, grads):

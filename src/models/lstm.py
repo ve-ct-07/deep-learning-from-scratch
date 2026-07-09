@@ -122,6 +122,10 @@ class LSTM:
             dh = dconcat[:dh.shape[0]]
             dc = dc * f
 
+        # Gradient clipping
+        for g in grads.values():
+            np.clip(g, -5, 5, out=g)
+
         return grads
 
     def update(self, optimizer, grads):

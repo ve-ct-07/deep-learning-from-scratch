@@ -45,7 +45,7 @@ class VanillaRNN:
 
         for idx in x:
             if idx == 0:
-                continue
+                break
 
             h_prev = h.copy()
 
