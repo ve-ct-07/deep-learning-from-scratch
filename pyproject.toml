@@ -1,0 +1,36 @@
+[project]
+name = "deep-learning-from-scratch"
+version = "1.0.0"
+description = "A NumPy-based deep learning framework implementing core neural network architectures and training algorithms from first principles."
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    { name = "P V Charan Teja" }
+]
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+keywords = [
+    "machine-learning",
+    "deep-learning",
+    "numpy",
+    "neural-networks",
+    "cnn",
+    "mlp",
+    "rnn",
+    "lstm",
+    "from-scratch",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
